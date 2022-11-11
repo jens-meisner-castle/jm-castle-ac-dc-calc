@@ -1,9 +1,12 @@
 {
   "name": "jm-castle-ac-dc-calc",
-  "version": "0.8.2",
+  "version": "0.8.3",
   "type": "module",
   "private": false,
   "main": "build",
+  "files": [
+    "build"
+  ],
   "scripts": {
     "clean": "del-cli build",
     "build-rollup": "rollup -c",
