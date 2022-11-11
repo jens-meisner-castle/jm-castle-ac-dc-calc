@@ -8,12 +8,12 @@
     "build"
   ],
   "exports": {
-    "./Calculator": "./build/calculation/Calculator"
+    "./calculation": "./build/calculation/index"
   },
   "typesVersions": {
     "*": {
-      "./Calculator": [
-        "./build/calculation/Calculator.d.ts"
+      "./calculation": [
+        "./build/calculation/index.d.ts"
       ]
     }
   },
