@@ -11,7 +11,9 @@ import {
   UniqueDatapoint,
 } from "jm-castle-ac-dc-types";
 import { DateTime } from "luxon";
-import { all, create, import as mathImport, isResultSet, Matrix } from "mathjs";
+import * as math from "mathjs";
+import { all, create, isResultSet, Matrix } from "mathjs";
+import {} from "mathjs/number";
 import {
   getSequenceDuration,
   getSequenceFind,
@@ -31,7 +33,7 @@ const extendMath = (imports: Record<string, unknown>) => {
   const importOptions: math.ImportOptions = {};
   const configOptions: math.ConfigOptions = {};
   const math = create(all, configOptions);
-  mathImport && mathImport(imports, importOptions);
+  math.import && math.import(imports, importOptions);
   return math;
 };
 
