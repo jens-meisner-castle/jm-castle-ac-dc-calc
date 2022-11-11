@@ -1,6 +1,6 @@
 {
   "name": "jm-castle-ac-dc-calc",
-  "version": "0.8.7",
+  "version": "0.8.8",
   "type": "module",
   "private": false,
   "main": "build",
@@ -31,6 +31,7 @@
     "cross-env": "^7.0.3",
     "del-cli": "^5.0.0",
     "eslint": "^8.23.1",
+    "jm-castle-ac-dc-types": "^0.8.4",
     "nodemon": "^2.0.19",
     "prettier": "^2.7.1",
     "rollup": "^2.78.1",
