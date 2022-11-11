@@ -13,7 +13,6 @@ import {
 import { DateTime } from "luxon";
 import * as math from "mathjs";
 import { all, create, isResultSet, Matrix } from "mathjs";
-import {} from "mathjs/number";
 import {
   getSequenceDuration,
   getSequenceFind,
@@ -134,8 +133,13 @@ export interface CalculatorProps {
 }
 export class Calculator {
   constructor(props: CalculatorProps) {
-    const { code, datapointId, valueType, valueUnit, name } = props;
+    const { code, datapointId, valueType, valueUnit, name, source } = props;
     this.datapointId = datapointId;
+    this.currentSource = {
+      tmp: {},
+      getDatapoint: source.getDatapoint,
+      getSequence: source.getSequence,
+    };
     this.calculatedDatapoint = {
       id: this.datapointId,
       name,
