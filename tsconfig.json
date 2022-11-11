@@ -1,17 +1,17 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
+    "target": "ESNext",
+    "module": "ESNext",
     "esModuleInterop": true,
+    "typeRoots": ["node_modules/@types"],
     "noImplicitAny": true,
-    "moduleResolution": "node",
+    "moduleResolution": "NodeNext",
     "sourceMap": true,
     "declaration": true,
     "outDir": "build",
     "baseUrl": "./",
-    "lib": ["ES2021", "dom"],
-    "skipLibCheck": true,
-    "resolveJsonModule": true
+    "lib": ["ES6", "dom"],
+    "skipLibCheck": true
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules"]

@@ -1,21 +1,20 @@
 {
   "name": "jm-castle-ac-dc-calc",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "type": "module",
   "private": false,
   "main": "build",
-  "files": [
-    "build"
-  ],
   "exports": {
-    "./calculation": "./build/calculation/index",
-    "./build": null
+    ".": {
+      "import": "./src/index.ts"
+    },
+    "./package.json": "./package.json"
   },
   "types": "./build/index.d.ts",
   "scripts": {
     "clean": "del-cli build",
     "build-rollup": "rollup -c",
-    "build": "npm run clean && npm run build-rollup",
+    "build": "npm run clean && npm run build-tsc",
     "prebuild": "eslint \"./src/**\"",
     "build-tsc": "tsc --project tsconfig.json"
   },
@@ -31,7 +30,7 @@
     "cross-env": "^7.0.3",
     "del-cli": "^5.0.0",
     "eslint": "^8.23.1",
-    "jm-castle-ac-dc-types": "^0.8.4",
+    "jm-castle-ac-dc-types": "^0.9.3",
     "nodemon": "^2.0.19",
     "prettier": "^2.7.1",
     "rollup": "^2.78.1",

@@ -11,13 +11,13 @@ import {
   UniqueDatapoint,
 } from "jm-castle-ac-dc-types";
 import { DateTime } from "luxon";
-import math, { all, create, isResultSet, Matrix } from "mathjs";
+import { all, create, import as mathImport, isResultSet, Matrix } from "mathjs";
 import {
   getSequenceDuration,
   getSequenceFind,
   getSequenceIntegral,
   getValueForMathJsRange,
-} from "../functions/Functions";
+} from "../functions/Functions.js";
 
 export const isDefined = (...values: unknown[]) =>
   values.every(
@@ -31,7 +31,7 @@ const extendMath = (imports: Record<string, unknown>) => {
   const importOptions: math.ImportOptions = {};
   const configOptions: math.ConfigOptions = {};
   const math = create(all, configOptions);
-  math.import && math.import(imports, importOptions);
+  mathImport && mathImport(imports, importOptions);
   return math;
 };
 

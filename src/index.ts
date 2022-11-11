@@ -4,7 +4,7 @@ import {
   CalculatorProps,
   findReferences,
   isDefined,
-} from "./calculation";
+} from "./calculation/index.js";
 
 export {
   Calculator,
