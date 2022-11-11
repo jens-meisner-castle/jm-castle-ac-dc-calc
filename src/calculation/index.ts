@@ -1,3 +1,15 @@
-import { Calculator, CalculatorProps, CalcReferences } from "./Calculator";
+import {
+  Calculator,
+  CalculatorProps,
+  CalcReferences,
+  findReferences,
+  isDefined,
+} from "./Calculator";
 
-export { Calculator, CalcReferences, CalculatorProps };
+export {
+  Calculator,
+  CalcReferences,
+  CalculatorProps,
+  findReferences,
+  isDefined,
+};

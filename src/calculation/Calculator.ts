@@ -27,7 +27,7 @@ export const isDefined = (...values: unknown[]) =>
       (typeof v !== "number" || !Number.isNaN(v))
   );
 
-export const extendMath = (imports: Record<string, unknown>) => {
+const extendMath = (imports: Record<string, unknown>) => {
   const importOptions: math.ImportOptions = {};
   const configOptions: math.ConfigOptions = {};
   const math = create(all, configOptions);
