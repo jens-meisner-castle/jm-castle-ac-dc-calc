@@ -1,6 +1,6 @@
 {
   "name": "jm-castle-ac-dc-calc",
-  "version": "0.8.4",
+  "version": "0.8.5",
   "type": "module",
   "private": false,
   "main": "build",
@@ -8,11 +8,11 @@
     "build"
   ],
   "exports": {
-    "./calculation": "./build/calculation"
+    "./Calculator": "./build/calculation/Calculator"
   },
   "typesVersions": {
     "*": {
-      "./calculation": [
+      "./Calculator": [
         "./build/calculation/Calculator.d.ts"
       ]
     }
