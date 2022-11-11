@@ -1,6 +1,6 @@
 {
   "name": "jm-castle-ac-dc-calc",
-  "version": "0.8.6",
+  "version": "0.8.7",
   "type": "module",
   "private": false,
   "main": "build",
@@ -8,15 +8,10 @@
     "build"
   ],
   "exports": {
-    "./calculation": "./build/calculation/index"
+    "./calculation": "./build/calculation/index",
+    "./build": null
   },
-  "typesVersions": {
-    "*": {
-      "./calculation": [
-        "./build/calculation/index.d.ts"
-      ]
-    }
-  },
+  "types": "./build/index.d.ts",
   "scripts": {
     "clean": "del-cli build",
     "build-rollup": "rollup -c",
