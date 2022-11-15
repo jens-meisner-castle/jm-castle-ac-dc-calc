@@ -1,6 +1,6 @@
 {
   "name": "jm-castle-ac-dc-calc",
-  "version": "0.9.4",
+  "version": "0.9.5",
   "type": "module",
   "private": false,
   "module": "./build",
@@ -8,6 +8,10 @@
     "build"
   ],
   "exports": {
+    "./build": {
+      "types": "./build/index.d.ts",
+      "import": "./build/index.js"
+    },
     ".": {
       "types": "./build/index.d.ts",
       "import": "./build/index.js"
