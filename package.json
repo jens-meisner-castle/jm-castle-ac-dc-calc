@@ -1,11 +1,12 @@
 {
   "name": "jm-castle-ac-dc-calc",
-  "version": "0.9.5",
+  "version": "0.9.6",
   "type": "module",
   "private": false,
   "module": "./build",
   "files": [
-    "build"
+    "build",
+    "src"
   ],
   "exports": {
     "./build": {
