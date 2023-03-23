@@ -1,6 +1,6 @@
 {
   "name": "jm-castle-ac-dc-calc",
-  "version": "0.10.0",
+  "version": "0.10.1",
   "type": "module",
   "private": false,
   "module": "./build",
@@ -40,8 +40,8 @@
   },
   "dependencies": {},
   "peerDependencies": {
-    "jm-castle-ac-dc-types": "^0.x",
-    "jm-castle-types": "^0.x",
+    "jm-castle-ac-dc-types": "^0.14.x",
+    "jm-castle-types": "^0.4.x",
     "luxon": "^3.x",
     "mathjs": "^11.x"
   }
